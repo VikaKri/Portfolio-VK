@@ -1,0 +1,15 @@
+h1 {
+  color: rgb(84, 62, 52);
+  font-family: "Sansita Smashed", serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Sansita Smashed", sans-serif;
+  font-weight: normal;
+}
+
+.gitIcon {
+  display: flex;
+  justify-content: center;
+}
