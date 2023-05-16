@@ -51,7 +51,7 @@ h3 {
 }
 
 .btn-branding {
-  background-color: white;
+  background-color: rgb(245, 239, 239);
   color: var(--main-text-color);
   font-family: var(--secondary-font-family);
   font-weight: 600;
