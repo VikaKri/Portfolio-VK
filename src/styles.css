@@ -32,22 +32,28 @@ h2 {
 h3 {
   color: var(--secondary-text-color);
   font-family: var(--secondary-font-family);
+  line-height: 1.5;
   font-weight: 400;
   font-size: 25px;
 }
 
-.sectionHome {
+.section-home {
   background: url(../images/home.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
-  display: block;
-  padding: 200px 20px;
+  padding: 210px 20px;
   text-align: center;
   min-height: 100vh;
+  display: block;
   overflow: hidden;
-  height: 100vh;
+  height: 125vh;
   width: 100%;
+}
+
+.section-projects {
+  background-color: #f3f4f3;
+  padding: 100px 0;
 }
 
 .btn-branding {
@@ -58,10 +64,34 @@ h3 {
   padding: 15px 25px;
   margin: 30px 0 0;
   border-radius: 30px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-branding:hover {
   background-color: #d6b3a7;
   color: rgb(114, 72, 72);
+}
+
+.btn-branding-second {
+  background-color: #dfcdc7;
+  color: var(--main-text-color);
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+  padding: 15px 55px;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-branding-second:hover {
+  background-color: #eae0dd;
+  color: rgb(89, 55, 55);
+}
+
+.projects-list {
+  margin: 100px 0;
+}
+
+.img-work {
+  border-radius: 20px;
+  opacity: 0.9;
 }
