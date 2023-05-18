@@ -45,8 +45,9 @@ h3 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  padding: 210px 20px;
+  padding: 210px 20px 0;
   text-align: center;
+  align-items: center;
   min-height: 100vh;
   display: block;
   overflow: hidden;
@@ -96,4 +97,31 @@ h3 {
 .img-work {
   border-radius: 20px;
   opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .section-projects {
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .btn-branding-second {
+    margin-top: 10px;
+  }
+
+  .projects-list {
+    margin-top: 60px;
+  }
 }
