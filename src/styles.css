@@ -10,7 +10,6 @@ body {
   background: url(../images/noise.gif);
   opacity: 0.987;
   background-repeat: no-repeat;
-
   background-position: center;
   background-size: cover;
 }
@@ -37,6 +36,10 @@ h3 {
   font-size: 25px;
 }
 
+.bg-custom-class {
+  background-color: #f7f7f7;
+}
+
 .section-home {
   background: url(../images/home.jpeg);
   background-repeat: no-repeat;
@@ -52,7 +55,6 @@ h3 {
 }
 
 .section-projects {
-  background-color: #f3f4f3;
   padding: 100px 0;
 }
 
