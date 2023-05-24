@@ -1,17 +1,17 @@
 :root {
-  --main-body-color: linear-gradient(135deg, #fffbf6 0%, #b3a175 100%);
-  --main-text-color: #381117;
-  --secondary-text-color: #472429;
+  --main-body-color: rgb(247, 247, 247);
+  --main-text-color: rgb(56, 17, 23);
+  --secondary-text-color: rgb(71, 36, 41);
   --main-font-family: "Merienda", sans-serif;
   --secondary-font-family: "Sansita Smashed", sans-serif;
 }
 
 body {
   background: url(../images/noise.gif);
-  opacity: 0.987;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.987;
 }
 
 h1 {
@@ -37,20 +37,17 @@ h3 {
 }
 
 .bg-custom-class {
-  background-color: #f7f7f7;
+  background-color: var(--main-body-color);
 }
 
 .section-home {
   background: url(../images/home.jpeg);
-  background-repeat: no-repeat;
   background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 29vh 2vw 0;
   text-align: center;
-  align-items: center;
   min-height: 100vh;
-  display: block;
-  overflow: hidden;
   height: 121vh;
   width: 100%;
 }
@@ -59,34 +56,33 @@ h3 {
   padding: 100px 0;
 }
 
-.btn-branding {
-  background-color: rgb(245, 239, 239);
+.btn-branding,
+.btn-branding-second {
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   color: var(--main-text-color);
   font-family: var(--secondary-font-family);
   font-weight: 600;
+}
+
+.btn-branding {
+  background-color: rgb(245, 239, 239);
   padding: 15px 25px;
   margin: 30px 0 0;
-  border-radius: 30px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-branding:hover {
-  background-color: #d6b3a7;
+  background-color: rgb(214, 179, 167);
   color: rgb(114, 72, 72);
 }
 
 .btn-branding-second {
-  background-color: #dfcdc7;
-  color: var(--main-text-color);
-  font-family: var(--secondary-font-family);
-  font-weight: 600;
+  background-color: rgb(223, 205, 199);
   padding: 15px 55px;
-  border-radius: 30px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-branding-second:hover {
-  background-color: #eae0dd;
+  background-color: rgb(234, 224, 221);
   color: rgb(89, 55, 55);
 }
 
@@ -98,8 +94,8 @@ h3 {
 .img-syune,
 .img-vika {
   border-radius: 20px;
-  opacity: 0.9;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
   transition: all 200ms ease-in-out;
 }
 
@@ -132,8 +128,8 @@ h3 {
   }
 
   .section-projects {
-    text-align: center;
     margin: 0 20px;
+    text-align: center;
   }
 
   .btn-branding-second {
