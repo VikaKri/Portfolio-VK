@@ -114,6 +114,41 @@ h3 {
   transform: scale(1.05);
 }
 
+.section-about {
+  background: url(../images/about1.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 101px 30px 50px 70px;
+  min-height: 100vh;
+  height: 160vh;
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(223, 205, 199, 0.6);
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: var(--secondary-text-color);
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-about {
+  padding: 10px;
+}
+
+.about-photo {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 28px;
@@ -127,6 +162,10 @@ h3 {
     font-size: 20px;
   }
 
+  p {
+    font-size: 16px;
+  }
+
   .section-projects {
     margin: 0 20px;
     text-align: center;
@@ -138,6 +177,20 @@ h3 {
 
   .projects-list {
     margin-top: 60px;
+  }
+  .section-about {
+    padding: 101px 20px 50px 20px;
+  }
+
+  .section-about h1,
+  .section-about h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-about {
+    height: 260vh;
   }
 }
 
