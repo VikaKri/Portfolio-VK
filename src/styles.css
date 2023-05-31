@@ -92,7 +92,8 @@ h3 {
 
 .img-weather,
 .img-syune,
-.img-vika {
+.img-vika,
+.img-certificate {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
@@ -114,14 +115,18 @@ h3 {
   transform: scale(1.05);
 }
 
+.img-certificate:hover {
+  transform: scale(1.05);
+}
+
 .section-about {
   background: url(../images/about1.jpeg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 101px 30px 50px 70px;
+  padding: 101px 0 50px;
   min-height: 100vh;
-  height: 160vh;
+  height: 190vh;
   width: 100%;
 }
 
@@ -147,6 +152,15 @@ p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 420px;
+}
+.skills-tools {
+  margin: 30px 0 150px;
+}
+
+.skill-icon {
+  color: #c46265;
+  font-size: 100px;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -178,9 +192,6 @@ p {
   .projects-list {
     margin-top: 60px;
   }
-  .section-about {
-    padding: 101px 20px 50px 20px;
-  }
 
   .section-about h1,
   .section-about h2 {
@@ -190,12 +201,17 @@ p {
 
 @media (max-width: 991px) {
   .section-about {
-    height: 260vh;
+    height: 270vh;
   }
 }
 
 @media (min-width: 1920px) {
   .container {
     max-width: 1700px;
+  }
+
+  .section-about {
+    min-height: 100vh;
+    height: 120vh;
   }
 }
