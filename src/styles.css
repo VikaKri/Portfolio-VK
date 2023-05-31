@@ -194,14 +194,18 @@ p {
   }
 
   .section-about h1,
-  .section-about h2 {
+  .section-about h2,
+  .section-skills {
     text-align: center;
+  }
+  .section-about {
+    padding-top: 50px;
   }
 }
 
 @media (max-width: 991px) {
   .section-about {
-    height: 270vh;
+    height: 265vh;
   }
 }
 
