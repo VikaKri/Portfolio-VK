@@ -209,6 +209,31 @@ p {
 }
 
 @media (min-width: 1920px) {
+  p {
+    font-size: 25px;
+  }
+
+  .section-home h2 {
+    font-size: 90px;
+  }
+
+  .section-home h1 {
+    font-size: 45px;
+  }
+
+  .section-home h3 {
+    font-size: 35px;
+  }
+
+  .section-home .btn-branding {
+    font-size: 25px;
+  }
+
+  .about-photo {
+    width: 100%;
+    max-width: 560px;
+  }
+
   .container {
     max-width: 1700px;
   }
