@@ -40,23 +40,27 @@ h3 {
 p {
   color: var(--secondary-text-color);
   font-family: var(--secondary-font-family);
-  font-size: 18px;
-  font-weight: 400;
   line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .bg-custom-class {
   background-color: var(--main-body-color);
 }
 
-.section-home {
+.section-home,
+.section-projects-pic {
   background: url(../images/home.jpeg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 121vh;
+}
+
+.section-home {
   padding: 29vh 2vw 0;
   text-align: center;
-  min-height: 121vh;
 }
 
 .section-projects {
@@ -99,7 +103,7 @@ p {
 .img-weather,
 .img-syune,
 .img-vika,
-.certificate-link {
+.img-link {
   border-radius: 20px;
   transition: all 200ms ease-in-out;
 }
@@ -119,7 +123,7 @@ p {
   transform: scale(1.05);
 }
 
-.certificate-link:hover {
+.img-link:hover {
   transform: scale(1.05);
 }
 
@@ -137,13 +141,12 @@ p {
   border: none;
 }
 
-.sheCodes-link {
-  font-style: italic;
+.general-link {
   color: var(--main-text-color);
   text-decoration: none;
 }
 
-.sheCodes-link:hover {
+.general-link:hover {
   color: var(--main-text-color);
   opacity: 0.7;
 }
@@ -157,6 +160,10 @@ p {
   padding: 100px;
 }
 
+.space-secondary {
+  padding: 65px;
+}
+
 .skills-tools {
   margin: 30px 0 150px;
 }
@@ -167,7 +174,31 @@ p {
   text-align: center;
 }
 
+.section-projects-bottom {
+  background: url(../images/home2.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.project-skill-icon {
+  color: #c46265;
+  font-size: 40px;
+  margin: 0 5px 0;
+}
+
+.project-card {
+  margin-bottom: 150px;
+}
+
 @media (max-width: 767px) {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
   h1 {
     font-size: 28px;
   }
@@ -197,14 +228,14 @@ p {
     margin-top: 60px;
   }
 
-  .section-about h1,
-  .section-about h2,
-  .section-skills {
-    text-align: center;
-  }
-
   .section-about {
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .project-card {
+    margin-bottom: 70px;
   }
 }
 
@@ -226,7 +257,7 @@ p {
   }
 
   .section-home .btn-branding {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .about-photo {
