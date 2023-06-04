@@ -158,8 +158,17 @@ p {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 101px 0 50px;
+  padding: 101px 0 0;
   min-height: 121vh;
+}
+
+.section-contact {
+  background: url(../images/contact2.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 101px 0 0;
+  min-height: 100vh;
 }
 
 .skill-icon {
