@@ -45,26 +45,13 @@ p {
   font-size: 18px;
 }
 
+.about-photo {
+  width: 100%;
+  max-width: 420px;
+}
+
 .bg-custom-class {
   background-color: var(--main-body-color);
-}
-
-.section-home,
-.section-projects-pic {
-  background: url(../images/home.jpeg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 121vh;
-}
-
-.section-home {
-  padding: 29vh 2vw 0;
-  text-align: center;
-}
-
-.section-projects {
-  padding: 100px 0;
 }
 
 .btn-branding,
@@ -96,46 +83,6 @@ p {
   color: rgb(89, 55, 55);
 }
 
-.projects-list {
-  margin: 100px 0;
-}
-
-.img-weather,
-.img-syune,
-.img-vika,
-.img-link {
-  border-radius: 20px;
-  transition: all 200ms ease-in-out;
-}
-
-.img-weather:hover {
-  content: url(/images/weather-app.png);
-  transform: scale(1.05);
-}
-
-.img-syune:hover {
-  content: url(/images/syune-portfolio.png);
-  transform: scale(1.05);
-}
-
-.img-vika:hover {
-  content: url(/images/vika-app.png);
-  transform: scale(1.05);
-}
-
-.img-link:hover {
-  transform: scale(1.05);
-}
-
-.section-about {
-  background: url(../images/about1.jpeg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 101px 0 50px;
-  min-height: 121vh;
-}
-
 .card {
   background-color: var(--card-background-color);
   border: none;
@@ -151,27 +98,78 @@ p {
   opacity: 0.7;
 }
 
-.about-photo {
-  width: 100%;
-  max-width: 420px;
+.img-syune,
+.img-weather,
+.img-vika,
+.img-link {
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
 }
 
-.space {
-  padding: 100px;
+.img-syune:hover {
+  content: url(/images/syune-portfolio.png);
+  transform: scale(1.05);
 }
 
-.space-secondary {
-  padding: 65px;
+.img-weather:hover {
+  content: url(/images/weather-app.png);
+  transform: scale(1.05);
 }
 
-.skills-tools {
-  margin: 30px 0 150px;
+.img-vika:hover {
+  content: url(/images/vika-app.png);
+  transform: scale(1.05);
+}
+
+.img-link:hover {
+  transform: scale(1.05);
+}
+
+.project-card {
+  margin-bottom: 150px;
+}
+
+.projects-list {
+  margin: 100px 0;
+}
+
+.project-skill-icon {
+  color: #c46265;
+  font-size: 30px;
+  margin: 0 5px 0;
+}
+
+.section-home,
+.section-projects-pic {
+  background: url(../images/home.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 121vh;
+}
+
+.section-home {
+  padding: 29vh 2vw 0;
+  text-align: center;
+}
+
+.section-about {
+  background: url(../images/about1.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 101px 0 50px;
+  min-height: 121vh;
 }
 
 .skill-icon {
   color: #c46265;
   font-size: 100px;
   text-align: center;
+}
+
+.skills-tools {
+  margin: 30px 0 150px;
 }
 
 .section-projects-bottom {
@@ -182,14 +180,17 @@ p {
   min-height: 100vh;
 }
 
-.project-skill-icon {
-  color: #c46265;
-  font-size: 40px;
-  margin: 0 5px 0;
+.section-projects-pic,
+.section-projects {
+  padding: 100px 0;
 }
 
-.project-card {
-  margin-bottom: 150px;
+.space {
+  padding: 100px;
+}
+
+.space-secondary {
+  padding: 65px;
 }
 
 @media (max-width: 767px) {
@@ -215,11 +216,6 @@ p {
     font-size: 16px;
   }
 
-  .section-projects {
-    margin: 0 20px;
-    text-align: center;
-  }
-
   .btn-branding-second {
     margin-top: 15px;
   }
@@ -230,6 +226,11 @@ p {
 
   .section-about {
     padding-top: 50px;
+  }
+
+  .section-projects {
+    margin: 0 20px;
+    text-align: center;
   }
 }
 
@@ -244,12 +245,21 @@ p {
     font-size: 25px;
   }
 
-  .section-home h2 {
-    font-size: 90px;
+  .about-photo {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .container {
+    max-width: 1700px;
   }
 
   .section-home h1 {
     font-size: 45px;
+  }
+
+  .section-home h2 {
+    font-size: 90px;
   }
 
   .section-home h3 {
@@ -258,14 +268,5 @@ p {
 
   .section-home .btn-branding {
     font-size: 20px;
-  }
-
-  .about-photo {
-    width: 100%;
-    max-width: 560px;
-  }
-
-  .container {
-    max-width: 1700px;
   }
 }
