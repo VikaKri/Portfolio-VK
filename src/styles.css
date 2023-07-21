@@ -98,6 +98,11 @@ p {
   opacity: 0.7;
 }
 
+.img-logo {
+  width: 100%;
+  max-width: 65px;
+}
+
 .img-syune,
 .img-weather,
 .img-vika,
@@ -148,8 +153,8 @@ p {
   min-height: 121vh;
 }
 
-.section-home {
-  padding: 29vh 2vw 0;
+.home-text {
+  padding: 18vh 2vw 0;
   text-align: center;
 }
 
@@ -163,11 +168,11 @@ p {
 }
 
 .section-contact {
-  background: url(../images/contact2.png);
-  background-position: bottom;
+  background: url(../images/contact.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 101px 0 0;
+  padding: 101px 150px 0;
   min-height: 100vh;
 }
 
@@ -246,6 +251,10 @@ p {
 @media (max-width: 991px) {
   .project-card {
     margin-bottom: 70px;
+  }
+
+  .section-contact {
+    padding: 101px 0 0;
   }
 }
 
