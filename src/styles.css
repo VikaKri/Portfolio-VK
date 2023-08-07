@@ -188,6 +188,10 @@ p {
   flex-direction: column;
 }
 
+.section-footer {
+  padding: 60px 30px 20px 30px;
+}
+
 .section-footer-contact {
   margin-top: auto;
   padding: 60px 30px 20px 30px;
