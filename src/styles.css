@@ -184,18 +184,12 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-}
-
-.section-footer {
-  padding: 60px 30px 20px 30px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-footer-contact {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: auto;
   padding: 60px 30px 20px 30px;
 }
 
