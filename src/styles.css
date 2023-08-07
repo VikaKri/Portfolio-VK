@@ -361,6 +361,10 @@ nav li a:hover,
     margin-top: 15px;
   }
 
+  .contact-button {
+    text-align: center;
+  }
+
   .contact-space {
     padding: 30px 5px 0;
   }
