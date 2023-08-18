@@ -237,6 +237,11 @@ p {
   padding: 90px;
 }
 
+.third-certificate {
+  width: 100%;
+  max-width: 650px;
+}
+
 /* header-menu */
 
 nav ul {
