@@ -122,17 +122,14 @@ p {
 }
 
 .img-syune:hover {
-  content: url(/images/syune-portfolio.png);
   transform: scale(1.05);
 }
 
 .img-weather:hover {
-  content: url(/images/weather-app.png);
   transform: scale(1.05);
 }
 
 .img-vika:hover {
-  content: url(/images/vika-app.png);
   transform: scale(1.05);
 }
 
